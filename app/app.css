@@ -11,7 +11,8 @@ body {
   background-color: #c1c1c1;
   color: #000000;
   font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-weight: 400;
+  font-weight: 200;
+  letter-spacing: .3em;
 }
 
 .image-stuff {
@@ -73,7 +74,8 @@ body {
 }
 
 .top-header {
-  font-size: 5em;
+  font-weight: 200;
+  font-size: 5.5em;
   margin-top: 40px;
   margin-bottom: 10px;
   -webkit-animation-duration: 3s;
@@ -81,6 +83,7 @@ body {
 }
 
 .mission-text {
+  font-weight: 200;
   font-size: 2.5em;
   margin-top: 20px;
   padding-left: 20px;
@@ -107,12 +110,51 @@ body {
   background: rgba(0,0,0,0.4);
 }
 
+.top-below-header {
+  font-size: 1.7em;
+  font-weight: 400;
+}
+
+.header-text {
+  font-weight: 200;
+  margin-left: 22px;
+  margin-bottom: 20px;
+}
+
+.bars-text {
+  font-size: .2em;
+  font-weight: 100;
+}
+
+.cart-text {
+  font-size: .2em;
+  font-weight: 100;
+}
+
+.rest-text {
+  font-size: .2em;
+  font-weight: 100;
+}
+
+.back-button {
+  font-size: 2em;
+  margin-left: 10px;
+  color: #ffffff;
+  text-decoration: none;
+  text-underline: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
 .overlay-center {
 
 }
 
 .b-name {
   font-size: 2.5em;
+  font-weight: 800;
 }
 
 .b-address {
@@ -120,7 +162,7 @@ body {
 }
 
 .b-rating {
-  color: #DFDFDF;
+  font-weight: 600;
 }
 
 .btn-dark {
