@@ -31,9 +31,23 @@ body {
   padding: 0;
 }
 
-.home-button {
+.rest-button {
   font-size: 5.5em;
-  padding: 120px 120px 120px 120px;
+  padding: 90px 90px 90px 90px;
+  margin: 50px 20px 20px 20px;
+  color: #464646;
+  background-color: #dfdfdf;
+}
+.bar-button {
+  font-size: 5.5em;
+  padding: 90px 90px 90px 90px;
+  margin: 50px 20px 20px 20px;
+  color: #464646;
+  background-color: #dfdfdf;
+}
+.cart-button {
+  font-size: 5.5em;
+  padding: 90px 90px 90px 90px;
   margin: 50px 20px 20px 20px;
   color: #464646;
   background-color: #dfdfdf;
