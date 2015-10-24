@@ -13,10 +13,10 @@ angular.module('myApp.view1', ['ngRoute'])
 
       $scope.businessApiService = businessApiService;
 
-      businessApiService.getData().then(function() {
+/*      businessApiService.getData().then(function() {
         $scope.data = businessApiService.data;
         console.log($scope.data);
-      });
+      });*/
       $scope.goToNext = function() {
         $location.path('/view2');
       }
