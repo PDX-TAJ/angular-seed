@@ -20,9 +20,13 @@
 blah
 </div>-->
 <div class="container">
-<div ng-repeat="d in data" class="result-view">
-  <button class="btn btn-dark single-result">
-    <span>{{d.BusinessName}}</span>
+<div ng-repeat="d in data" class="result-view animated fadeInUp" style="-webkit-animation-duration: 3s">
+  <button class="btn btn-dark single-result animated fadeIn" ng-click="openTab(d.url)">
+    <img ng-src="{{d.image}}" class="image-stuff"/>
+    <h3 class="b-name"><i>{{d.name}}</i></h3>
+    <h3 class="b-rating">Rating: {{d.rating}}</h3>
+    <h4 class="b-address">{{d.address}}</h4>
+    <h4 class="b-date">Opened Since: {{d.date}}</h4>
   </button>
 <!--
   <button class="btn btn-lg single-result" style="display: inline-block">
