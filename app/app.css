@@ -1,7 +1,7 @@
 /* app css stylesheet */
 body {
   /*background-color: #a4a4a4;*/
-  background-image: url('resources/stardust.png');
+  background-image: url('resources/star1.png');
   color: #FFFFFF;
   font-family: ‘Palatino Linotype’, ‘Book Antiqua’, Palatino, serif;
 }
@@ -49,6 +49,22 @@ body {
   opacity: 1;
   background-color: #FFDC77;
 }
+.cart-button:hover {
+  opacity: 1;
+  background-color: #78A9F2;
+  -webkit-animation: rotateLeft 20s;
+}
+.bar-button:hover {
+  -webkit-animation: rotateLeft 20s;
+  opacity: 1;
+  background-color: #FF817D;
+
+}
+.rest-button:hover {
+  -webkit-animation: rotateLeft 20s;
+  opacity: 1;
+  background-color: #FFDC77;
+}
 
 .top-header {
   font-size: 5em;
@@ -56,6 +72,7 @@ body {
   margin-bottom: 10px;
   -webkit-animation-duration: 3s;
   -webkit-animation-delay: 0s;
+  opacity:.5;
 }
 
 .mission-text {
