@@ -10,8 +10,11 @@ body {
   font-size: 5.5em;
   padding: 90px 90px 90px 90px;
   margin: 50px 20px 20px 20px;
-  background: linear-gradient(#FFCC67,#776622);
-  opacity: .75;
+  /*background: linear-gradient(#FFCC67,#776622);*/
+  background-image: url('resources/purpleGloss.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: .65;
   border: none;
   -webkit-animation: unRotate .2s;
 }
@@ -19,8 +22,11 @@ body {
   font-size: 5.5em;
   padding: 90px 90px 90px 90px;
   margin: 50px 20px 20px 20px;
-  background: linear-gradient(#FF615D, #772222);
-  opacity: .75;
+  /*background: linear-gradient(#FF615D, #772222);*/
+  background-image: url('resources/redGloss.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: .65;
   border: none;
   -webkit-animation: unRotate .2s;
 }
@@ -28,25 +34,28 @@ body {
   font-size: 5.5em;
   padding: 90px 90px 90px 90px;
   margin: 50px 20px 20px 20px;
-  background: linear-gradient(#6899E2,#224477);
-  opacity: .75;
+ /* background: linear-gradient(#6899E2,#224477);*/
+  background-image: url('resources/blueGloss.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: .65;
   border: none;
   -webkit-animation: unRotate .2s;
 }
 .cart-button:hover {
-  opacity: .9;
+  opacity: .8;
   background-color: #78A9F2;
   -webkit-animation: rotateLeft 20s;
 }
 .bar-button:hover {
   -webkit-animation: rotateLeft 20s;
-  opacity: .9;
+  opacity: .8;
   background-color: #FF817D;
 
 }
 .rest-button:hover {
   -webkit-animation: rotateLeft 20s;
-  opacity: .9;
+  opacity: .8;
   background-color: #FFDC77;
 }
 
