@@ -19,14 +19,17 @@ angular.module('myApp.services', []).
 
       businessApiService.selectBar = function() {
         naicsCode = '72241';
+        console.log(naicsCode);
       };
 
       businessApiService.selectRest = function() {
         naicsCode = '72251';
+        console.log(naicsCode);
       };
 
       businessApiService.selectCart = function() {
         naicsCode = '72233';
+        console.log(naicsCode);
       };
 
       businessApiService.getData = function() {

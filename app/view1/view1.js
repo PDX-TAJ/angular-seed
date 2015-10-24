@@ -9,6 +9,12 @@ angular.module('myApp.view1', ['ngRoute'])
   });
 }])
 
-.controller('View1Ctrl', [function() {
+.controller('View1Ctrl', function($scope, businessApiService) {
 
-}]);
+      $scope.businessApiService = businessApiService;
+
+      businessApiService.getData().then(function() {
+        $scope.data = businessApiService.data;
+        console.log($scope.data);
+      });
+});
