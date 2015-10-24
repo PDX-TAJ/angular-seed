@@ -15,7 +15,8 @@ config(['$routeProvider', function($routeProvider) {
 angular.module('myApp.services', []).
     factory('businessApiService', function($http) {
       var businessApiService = {},
-          naicsCode = '72251';
+          naicsCode = '72251',
+          businessName = 'Wrapmaster Lisa';
 
       businessApiService.selectBar = function() {
         naicsCode = '72241';
@@ -40,7 +41,18 @@ angular.module('myApp.services', []).
           businessApiService.data = response.data.results;
           console.log(businessApiService.data);
         }, function errorCallback() {
-          console.log("error in http request");
+          console.log("error in http request for civics app data");
+        });
+      };
+
+      businessApiService.getYelpData = function() {
+        return $http({
+          method: 'GET',
+          url: 'http://localhost:3000/?term='+businessName,
+        }).then(function successCallback(response) {
+          businessApiService.yelpData = response.data;
+        }, function errorCallback() {
+          console.log("Error in http request for yelp data");
         });
       };
 
