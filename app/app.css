@@ -1,6 +1,8 @@
 /* app css stylesheet */
 body {
   /*background-color: #a4a4a4;*/
+  color: #333333;
+  font-family: ‘Palatino Linotype’, ‘Book Antiqua’, Palatino, serif;
 }
 .menu {
   list-style: none;
