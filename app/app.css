@@ -11,7 +11,7 @@ body {
   padding: 90px 90px 90px 90px;
   margin: 50px 20px 20px 20px;
   background: linear-gradient(#FFCC67,#776622);
-  opacity: .9;
+  opacity: .75;
   border: none;
   -webkit-animation: unRotate .2s;
 }
@@ -20,7 +20,7 @@ body {
   padding: 90px 90px 90px 90px;
   margin: 50px 20px 20px 20px;
   background: linear-gradient(#FF615D, #772222);
-  opacity: .9;
+  opacity: .75;
   border: none;
   -webkit-animation: unRotate .2s;
 }
@@ -29,40 +29,24 @@ body {
   padding: 90px 90px 90px 90px;
   margin: 50px 20px 20px 20px;
   background: linear-gradient(#6899E2,#224477);
-  opacity: .9;
+  opacity: .75;
   border: none;
   -webkit-animation: unRotate .2s;
 }
 .cart-button:hover {
-  opacity: 1;
+  opacity: .9;
   background-color: #78A9F2;
   -webkit-animation: rotateLeft 20s;
 }
 .bar-button:hover {
   -webkit-animation: rotateLeft 20s;
-  opacity: 1;
+  opacity: .9;
   background-color: #FF817D;
 
 }
 .rest-button:hover {
   -webkit-animation: rotateLeft 20s;
-  opacity: 1;
-  background-color: #FFDC77;
-}
-.cart-button:hover {
-  opacity: 1;
-  background-color: #78A9F2;
-  -webkit-animation: rotateLeft 20s;
-}
-.bar-button:hover {
-  -webkit-animation: rotateLeft 20s;
-  opacity: 1;
-  background-color: #FF817D;
-
-}
-.rest-button:hover {
-  -webkit-animation: rotateLeft 20s;
-  opacity: 1;
+  opacity: .9;
   background-color: #FFDC77;
 }
 
