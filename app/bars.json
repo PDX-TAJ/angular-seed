@@ -1,0 +1,62 @@
+{
+  "bars":[
+    {
+      "name"    : "PINTS",
+      "rating"  : "4",
+      "image"   : "http://s3-media4.fl.yelpcdn.com/bphoto/mK6Pr-hBN6x1Erc7cfl2lg/ms.jpg",
+      "address" : "412 NW 5TH AVE",
+      "date"    : "2015-05-01",
+      "url"     : "http://www.yelp.com/biz/pints-portland-2"
+    },
+    {
+      "name"    : "Bliss Lounge",
+      "rating"  : "4.5",
+      "image"   : "http://s3-media2.fl.yelpcdn.com/bphoto/UgyEPrkg4eVedlCOS28_DA/ms.jpg",
+      "address" : "8350 SE POWELL BLVD",
+      "date"    : "2015-04-30",
+      "url"     : "http://www.yelp.com/biz/bliss-lounge-portland"
+    },{
+      "name"    : "Port Way Tavern",
+      "rating"  : "3.5",
+      "image"   : "http://s3-media4.fl.yelpcdn.com/bphoto/HdOQ7A8lJ6NJ9ZwlJH7Qtg/ms.jpg",
+      "address" : "7600 N WILLAMETTE BLVD",
+      "date"    : "2015-04-29",
+      "url"     : "http://www.yelp.com/biz/port-way-tavern-portland"
+    },{
+      "name"    :
+      "rating"  :
+      "image"   :
+      "address" :
+      "date"    :
+      "url"     :
+    },{
+      "name"    :
+      "rating"  :
+      "image"   :
+      "address" :
+      "date"    :
+      "url"     :
+    },{
+      "name"    :
+      "rating"  :
+      "image"   :
+      "address" :
+      "date"    :
+      "url"     :
+    },{
+      "name"    :
+      "rating"  :
+      "image"   :
+      "address" :
+      "date"    :
+      "url"     :
+    },{
+      "name"    :
+      "rating"  :
+      "image"   :
+      "address" :
+      "date"    :
+      "url"     :
+    }
+  ]
+}
