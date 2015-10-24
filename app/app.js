@@ -5,7 +5,8 @@ angular.module('myApp', [
   'ngRoute',
   'myApp.view1',
   'myApp.view2',
-  'myApp.version'
+  'myApp.version',
+  'myApp.services'
 ]).
 config(['$routeProvider', function($routeProvider) {
   $routeProvider.otherwise({redirectTo: '/view1'});
@@ -13,14 +14,32 @@ config(['$routeProvider', function($routeProvider) {
 
 angular.module('myApp.services', []).
     factory('businessApiService', function($http) {
-      var businessApiService = {};
-      //do they get here
-      //businessApiService.whateverDataIsReturnedGoesHere
-      /*businessApiService.getData = function(){
+      var businessApiService = {},
+          naicsCode = '72251';
 
+      businessApiService.selectBar = function() {
+        naicsCode = '72241';
       };
-      businessApiService.newVariable = whateverYouwWant;*/
 
-      //return the entire object. Access the things in the controllers u use them in.
+      businessApiService.selectRest = function() {
+        naicsCode = '72251';
+      };
+
+      businessApiService.selectCart = function() {
+        naicsCode = '72233';
+      };
+
+      businessApiService.getData = function() {
+        return $http({
+          method: 'GET',
+          url: 'http://api.civicapps.org/business-licenses/category/'+naicsCode+'?count=20',
+        }).then(function successCallback(response) {
+          businessApiService.data = response.data.results;
+          console.log(businessApiService.data);
+        }, function errorCallback() {
+          console.log("error in http request");
+        });
+      };
+
       return businessApiService;
 });
