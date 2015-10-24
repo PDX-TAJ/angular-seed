@@ -16,4 +16,9 @@ angular.module('myApp.view2', ['ngRoute'])
         $scope.data = businessApiService.data;
         console.log($scope.data);
       });
+
+      businessApiService.getYelpData().then(function() {
+        $scope.yelpData = businessApiService.yelpData;
+        console.log($scope.yelpData);
+      });
 });
