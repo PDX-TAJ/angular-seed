@@ -90,16 +90,16 @@ body {
 
 .result-view {
   color: black;
-  display: inline-block;
   /*background: url('resources/stardust.png');*/
 }
 
 .single-result {
   text-align: center;
-  min-width: 220px;
+  width: 100%;
   min-height: 220px;
   padding: 20px 20px 20px 20px;
   margin: 20px 20px 20px 20px;
+  background: rgba(0,0,0,0.4);
 }
 
 .overlay-center {
