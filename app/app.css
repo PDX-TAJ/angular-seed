@@ -1,5 +1,7 @@
 /* app css stylesheet */
-
+body {
+  /*background-color: #a4a4a4;*/
+}
 .menu {
   list-style: none;
   border-bottom: 0.1em solid black;
@@ -27,4 +29,19 @@
 .menu > li:nth-child(1):before {
   content: "";
   padding: 0;
+}
+
+.home-button {
+  font-size: 5.5em;
+  padding: 120px 120px 120px 120px;
+  margin: 50px 20px 20px 20px;
+  color: #464646;
+  background-color: #dfdfdf;
+}
+
+.top-header {
+  color: #2e2e2e;
+  font-size: 5em;
+  margin-top: 20px;
+  opacity: .4;
 }
