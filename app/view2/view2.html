@@ -1,8 +1,8 @@
 
 
-<nav class="navbar navbar-invert">
+<!--<nav class="navbar navbar-invert">
   <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
+    &lt;!&ndash; Brand and toggle get grouped for better mobile display &ndash;&gt;
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
         <span class="sr-only">Toggle navigation</span>
@@ -14,7 +14,17 @@
     </div>
 
     <p class="navbar-text navbar-right">DO COOL STUFF</p>
+    </div>
+  </nav>-->
 
-  </div><!-- /.container-fluid -->
-</nav>
+<div ng-repeat="d in data" class="result-view">
+  <button class="btn btn-default single-result">
+    <span>{{d.BusinessName}}</span>
+  </button>
+<!--
+  <button class="btn btn-lg single-result" style="display: inline-block">
+    <span class="b-name">{{d.BusinessName}}</span>
+    <span class="b-address">{{d.GISAddress}}</span>
+  </button>-->
+</div>
 

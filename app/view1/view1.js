@@ -9,7 +9,7 @@ angular.module('myApp.view1', ['ngRoute'])
   });
 }])
 
-.controller('View1Ctrl', function($scope, businessApiService) {
+.controller('View1Ctrl', function($scope, $location, businessApiService) {
 
       $scope.businessApiService = businessApiService;
 
@@ -17,4 +17,7 @@ angular.module('myApp.view1', ['ngRoute'])
         $scope.data = businessApiService.data;
         console.log($scope.data);
       });
+      $scope.goToNext = function() {
+        $location.path('/view2');
+      }
 });

@@ -3,13 +3,13 @@
 </div>
 
 <div class="text-center selection-options animated fadeInUp fadeIn">
-    <button class="btn btn-default bar-button" ng-click="businessApiService.selectBar()">
+    <button class="btn btn-dark bar-button" ng-click="businessApiService.selectBar(); goToNext();">
         <span class="glyphicon glyphicon-glass" aria-hidden="true"></span>
     </button>
-    <button class="btn btn-default rest-button" ng-click="businessApiService.selectRest()">
+    <button class="btn btn-dark rest-button" ng-click="businessApiService.selectRest(); goToNext();">
         <span class="glyphicon glyphicon-cutlery" aria-hidden="true"></span>
     </button>
-    <button class="btn btn-default cart-button" ng-click="businessApiService.selectCart()">
+    <button class="btn btn-dark btn-lg cart-button" ng-click="businessApiService.selectCart(); goToNext();">
         <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
     </button>
 </div>
