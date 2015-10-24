@@ -13,6 +13,7 @@ body {
   background: linear-gradient(#FFCC67,#776622);
   opacity: .9;
   border: none;
+  -webkit-animation: unRotate .2s;
 }
 .bar-button {
   font-size: 5.5em;
@@ -21,6 +22,7 @@ body {
   background: linear-gradient(#FF615D, #772222);
   opacity: .9;
   border: none;
+  -webkit-animation: unRotate .2s;
 }
 .cart-button {
   font-size: 5.5em;
@@ -29,16 +31,21 @@ body {
   background: linear-gradient(#6899E2,#224477);
   opacity: .9;
   border: none;
+  -webkit-animation: unRotate .2s;
 }
 .cart-button:hover {
   opacity: 1;
   background-color: #78A9F2;
+  -webkit-animation: rotateLeft 20s;
 }
 .bar-button:hover {
+  -webkit-animation: rotateLeft 20s;
   opacity: 1;
   background-color: #FF817D;
+
 }
 .rest-button:hover {
+  -webkit-animation: rotateLeft 20s;
   opacity: 1;
   background-color: #FFDC77;
 }
@@ -63,6 +70,23 @@ body {
   -webkit-animation-duration: 2s;
 }
 
+
+@-webkit-keyframes rotateLeft {
+  0% {
+    transform: rotate(0deg);
+  }
+  5%{
+    transform: rotate(5deg);
+  }
+}
+@-webkit-keyframes unRotate {
+  0% {
+    transform: rotate(5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
 
 
 /*CSS ANIMATION STUFF*/
