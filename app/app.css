@@ -1,7 +1,7 @@
 /* app css stylesheet */
 body {
   /*background-color: #a4a4a4;*/
-  background-image: url('resources/stardust.png');
+  background-image: url('resources/star1.png');
   color: #FFFFFF;
   font-family: ‘Palatino Linotype’, ‘Book Antiqua’, Palatino, serif;
 }
@@ -10,36 +10,52 @@ body {
   font-size: 5.5em;
   padding: 90px 90px 90px 90px;
   margin: 50px 20px 20px 20px;
-  background: linear-gradient(#FFCC67,#776622);
-  opacity: .9;
+  /*background: linear-gradient(#FFCC67,#776622);*/
+  background-image: url('resources/purpleGloss.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: .65;
   border: none;
+  -webkit-animation: unRotate .2s;
 }
 .bar-button {
   font-size: 5.5em;
   padding: 90px 90px 90px 90px;
   margin: 50px 20px 20px 20px;
-  background: linear-gradient(#FF615D, #772222);
-  opacity: .9;
+  /*background: linear-gradient(#FF615D, #772222);*/
+  background-image: url('resources/redGloss.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: .65;
   border: none;
+  -webkit-animation: unRotate .2s;
 }
 .cart-button {
   font-size: 5.5em;
   padding: 90px 90px 90px 90px;
   margin: 50px 20px 20px 20px;
-  background: linear-gradient(#6899E2,#224477);
-  opacity: .9;
+ /* background: linear-gradient(#6899E2,#224477);*/
+  background-image: url('resources/blueGloss.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: .65;
   border: none;
+  -webkit-animation: unRotate .2s;
 }
 .cart-button:hover {
-  opacity: 1;
+  opacity: .8;
   background-color: #78A9F2;
+  -webkit-animation: rotateLeft 20s;
 }
 .bar-button:hover {
-  opacity: 1;
+  -webkit-animation: rotateLeft 20s;
+  opacity: .8;
   background-color: #FF817D;
+
 }
 .rest-button:hover {
-  opacity: 1;
+  -webkit-animation: rotateLeft 20s;
+  opacity: .8;
   background-color: #FFDC77;
 }
 
@@ -47,8 +63,9 @@ body {
   font-size: 5em;
   margin-top: 40px;
   margin-bottom: 10px;
-  -webkit-animation-duration: 2s;
-  -webkit-animation-delay: 0s
+  -webkit-animation-duration: 3s;
+  -webkit-animation-delay: 0s;
+  opacity:.5;
 }
 
 .mission-text {
@@ -56,13 +73,30 @@ body {
   margin-top: 20px;
   padding-left: 20px;
   -webkit-animation-duration: 1s;
-  -webkit-animation-delay: 1s
+  -webkit-animation-delay: .5s;
 }
 
 .selection-options {
   -webkit-animation-duration: 2s;
 }
 
+
+@-webkit-keyframes rotateLeft {
+  0% {
+    transform: rotate(0deg);
+  }
+  5%{
+    transform: rotate(5deg);
+  }
+}
+@-webkit-keyframes unRotate {
+  0% {
+    transform: rotate(5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
 
 
 /*CSS ANIMATION STUFF*/
