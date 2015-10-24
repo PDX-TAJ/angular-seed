@@ -5,6 +5,7 @@ html {
 body {
   /*background-color: #a4a4a4;*/
   background-image: url('resources/portland1.png');
+  background-attachment: fixed;
   background-size: 100%;
   background-repeat: no-repeat;
   background-color: #c1c1c1;
@@ -89,13 +90,12 @@ body {
 
 .result-view {
   color: black;
-  display: inline-block;
   /*background: url('resources/stardust.png');*/
 }
 
 .single-result {
   text-align: center;
-  min-width: 220px;
+  min-width: 100%;
   min-height: 220px;
   padding: 20px 20px 20px 20px;
   margin: 20px 20px 20px 20px;
