@@ -14,11 +14,22 @@ config(['$routeProvider', function($routeProvider) {
 
 angular.module('myApp.services', []).
     factory('businessApiService', function($http) {
-      var businessApiService = {};
-      var naicsCode = '72251';
+      var businessApiService = {},
+          naicsCode = '72251';
 
-      businessApiService.getData = function(){
+      businessApiService.selectBar = function() {
+        naicsCode = '72241';
+      };
 
+      businessApiService.selectRest = function() {
+        naicsCode = '72251';
+      };
+
+      businessApiService.selectCart = function() {
+        naicsCode = '72233';
+      };
+
+      businessApiService.getData = function() {
         return $http({
           method: 'GET',
           url: 'http://api.civicapps.org/business-licenses/category/'+naicsCode+'?count=20',
@@ -28,8 +39,7 @@ angular.module('myApp.services', []).
         }, function errorCallback() {
           console.log("error in http request");
         });
-
       };
 
       return businessApiService;
-});;
+});
