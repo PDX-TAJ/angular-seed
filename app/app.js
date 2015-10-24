@@ -21,19 +21,29 @@ angular.module('myApp.services', []).
       businessApiService.selectBar = function() {
         naicsCode = '72241';
         console.log(naicsCode);
+        businessApiService.naicsCode = naicsCode;
       };
 
       businessApiService.selectRest = function() {
         naicsCode = '72251';
         console.log(naicsCode);
+        businessApiService.naicsCode = naicsCode;
       };
 
       businessApiService.selectCart = function() {
         naicsCode = '72233';
         console.log(naicsCode);
+        businessApiService.naicsCode = naicsCode;
       };
 
-      businessApiService.getData = function() {
+      businessApiService.getTheData = function() {
+        return $http.get('restaurants'.json)
+            .success(function(response){
+              businessApiService.jsondata = angular.fromJson(response);
+              businessApiService.jsondata = businessApiService.jsondata.naicsCode;
+              console.log(businessApiService.jsondata.naicsCode);
+            });
+/*
         return $http({
           method: 'GET',
           url: 'http://api.civicapps.org/business-licenses/category/'+naicsCode+'?count=20',
@@ -42,18 +52,22 @@ angular.module('myApp.services', []).
           console.log(businessApiService.data);
         }, function errorCallback() {
           console.log("error in http request for civics app data");
-        });
+        });*/
       };
 
       businessApiService.getYelpData = function() {
         return $http({
           method: 'GET',
-          url: 'http://localhost:3000/?term='+businessName,
+          url: 'http://localhost:3000/?term='+businessName
         }).then(function successCallback(response) {
           businessApiService.yelpData = response.data;
         }, function errorCallback() {
           console.log("Error in http request for yelp data");
         });
+      };
+
+      businessApiService.getNax = function() {
+        return naicsCode;
       };
 
       return businessApiService;
