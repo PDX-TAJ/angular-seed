@@ -1,1 +1,23 @@
-<p>This is the partial for view 1.</p>
+<div class="top-header text-center animated zoomIn">
+    Go Local
+</div>
+<div class="top-below-header text-center animated fadeInRightBounce" style="-webkit-animation-delay: 2s; -webkit-animation-duration: 3s">
+    Recently Opened Establishments in the Portland Area
+</div>
+<div class="text-center selection-options animated fadeInUp fadeIn">
+    <button class="btn btn-dark bar-button" ng-click="businessApiService.selectBar(); goToNext();">
+        <span class="glyphicon glyphicon-glass" aria-hidden="true"><h5 class="bars-text">Bars</h5></span>
+    </button>
+    <button class="btn btn-dark rest-button" ng-click="businessApiService.selectRest(); goToNext();">
+        <span class="glyphicon glyphicon-cutlery" aria-hidden="true"><h5 class="rest-text">Restaurants</h5></span>
+    </button>
+    <button class="btn btn-dark btn-lg cart-button" ng-click="businessApiService.selectCart(); goToNext();">
+        <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"><h5 class="cart-text">Food-Carts</h5></span>
+    </button>
+
+
+</div>
+
+<div class="mission-text animated fadeInLeft">
+    Go Local. Eat Portland
+</div>
